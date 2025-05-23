@@ -25,7 +25,7 @@ const MacbookWindow = ({ children, title }) => {
         <div className="flex space-x-2">
           <div className="w-3 h-3 rounded-full bg-red-500"></div>
           <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div className="w-3 h-3 rounded-full bg-green-500"></div>
+          <div className="w-3 h-3 rounded-full bg-lime-500"></div>
         </div>
         <div className="text-center flex-1 text-sm text-gray-400">{title}</div>
       </div>
@@ -41,15 +41,15 @@ const MobileMenu = ({ isOpen, onClose }) => {
   return (
     <div className={`fixed inset-0 bg-gray-900/95 z-50 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
       <div className="flex justify-end p-4">
-        <button onClick={onClose} className="text-green-400">
+        <button onClick={onClose} className="text-lime-400">
           <X size={24} />
         </button>
       </div>
       <div className="flex flex-col items-center space-y-8 p-8">
-        <a href="#about" onClick={onClose} className="text-2xl text-green-400 hover:text-green-300">About</a>
-        <a href="#work" onClick={onClose} className="text-2xl text-green-400 hover:text-green-300">Work</a>
-        <a href="#projects" onClick={onClose} className="text-2xl text-green-400 hover:text-green-300">Projects</a>
-        <a href="#blog" onClick={onClose} className="text-2xl text-green-400 hover:text-green-300">Blog</a>
+        <a href="#about" onClick={onClose} className="text-2xl text-lime-400 hover:text-lime-300">About</a>
+        <a href="#work" onClick={onClose} className="text-2xl text-lime-400 hover:text-lime-300">Work</a>
+        <a href="#projects" onClick={onClose} className="text-2xl text-lime-400 hover:text-lime-300">Projects</a>
+        <a href="#blog" onClick={onClose} className="text-2xl text-lime-400 hover:text-lime-300">Blog</a>
       </div>
     </div>
   );
@@ -76,69 +76,40 @@ const Portfolio = () => {
     "Available for freelance work", "Connect with me", "Drop me a message"
   ];
 
-  // const projects = [
-  //   {
-  //     name: "CryptoTracker",
-  //     description: "Real-time cryptocurrency price tracking app built with React",
-  //     github: "https://github.com/username/crypto-tracker",
-  //     demo: "https://crypto-tracker-demo.com",
-  //     tech: ["React", "Node.js", "WebSocket"]
-  //   },
-  //   {
-  //     name: "CLITools",
-  //     description: "Collection of productivity tools written in Rust",
-  //     github: "https://github.com/username/cli-tools",
-  //     tech: ["Rust", "CLI"]
-  //   },
-  //   {
-  //     name: "AI Image Generator",
-  //     description: "Generate unique images using stable diffusion",
-  //     github: "https://github.com/username/ai-image-gen",
-  //     demo: "https://ai-image-gen-demo.com",
-  //     tech: ["Python", "PyTorch", "React"]
-  //   },
-  //   {
-  //     name: "DevOps Dashboard",
-  //     description: "Monitor and manage cloud infrastructure",
-  //     github: "https://github.com/username/devops-dashboard",
-  //     demo: "https://devops-dashboard-demo.com",
-  //     tech: ["Vue.js", "Go", "Docker"]
-  //   }
-  // ];
 
 
   const projects = [
     {
-      name: "AI Interview Website",
+      name: "CureXpert",
       description: "Real-time cryptocurrency price tracking app built with React",
       github: "https://github.com/username/crypto-tracker",
       demo: "https://crypto-tracker-demo.com",
       tech: ["React", "Node.js", "WebSocket"],
-      image: "/api/placeholder/400/200"
+      image: "https://i.pinimg.com/736x/f9/79/c2/f979c27f10d01b22dc79d4f7796d2135.jpg"
     },
     {
-      name: "Appoint Doctor Online",
+      name: "Femina flow",
       description: "Real-time cryptocurrency price tracking app built with React",
       github: "https://github.com/username/crypto-tracker",
       demo: "https://crypto-tracker-demo.com",
       tech: ["React", "Node.js", "WebSocket"],
-      image: "/api/placeholder/400/200"
+      image: "https://i.pinimg.com/736x/ab/bc/0e/abbc0e0ca3ad08ec15e183ae14bec4a3.jpg"
     },
        {
-        name: "Paytm Wallet",
+        name: "Study Buddy",
         description: "Real-time cryptocurrency price tracking app built with React",
         github: "https://github.com/username/crypto-tracker",
         demo: "https://crypto-tracker-demo.com",
         tech: ["React", "Node.js", "WebSocket"],
-        image: "/api/placeholder/400/200"
+        image: "https://i.pinimg.com/originals/ef/16/e4/ef16e4e68b0d3cb81e6bb8a8c3258d7e.gif"
     },
     {
-      name: "Awwwards Website",
+      name: "TPSC Guide",
       description: "Real-time cryptocurrency price tracking app built with React",
       github: "https://github.com/username/crypto-tracker",
       demo: "https://crypto-tracker-demo.com",
       tech: ["React", "Node.js", "WebSocket"],
-      image: "/api/placeholder/400/200"
+      image: "https://i.pinimg.com/736x/1b/1a/59/1b1a5949de059fdee5765b9cbddaac1c.jpg"
     },
     {
       name: "Zoom Clone",
@@ -146,31 +117,31 @@ const Portfolio = () => {
       github: "https://github.com/username/crypto-tracker",
       demo: "https://crypto-tracker-demo.com",
       tech: ["React", "Node.js", "WebSocket"],
-      image: "/api/placeholder/400/200"
+      image: "https://i.pinimg.com/originals/45/04/28/4504285f9f12ea09bed8366f05a399d4.gif"
     },
     {
-      name: "Medium Clone",
+      name: "Resort Booking",
       description: "Real-time cryptocurrency price tracking app built with React",
       github: "https://github.com/username/crypto-tracker",
       demo: "https://crypto-tracker-demo.com",
       tech: ["React", "Node.js", "WebSocket"],
-      image: "/api/placeholder/400/200"
+      image: "https://i.pinimg.com/736x/a4/99/9e/a4999ef5ce859ce272f85fb1b4e0b631.jpg"
     }
   ];
 
   const work = [
     {
-      company: "xLayer Technologies Pvt Ltd",
-      role: "Senior Software Engineer",
-      period: "2022 - Present",
+      company: "CureXpert India",
+      role: "Tech Lead",
+      period: "2024 - Present",
       description: "Led backend development team, implemented microservices architecture"
     },
-    {
-      company: "Learn2gather",
-      role: "Software Developer Intern",
-      period: "2021 - 2022",
-      description: "Developed full-stack features using React and Node.js"
-    }
+    // {
+    //   company: "xlayer Technologies Pvt Ltd",
+    //   role: "Software Developer Intern",
+    //   period: "2021 - 2022",
+    //   description: "Developed full-stack features using React and Node.js"
+    // }
   ];
 
   const blogs = [
@@ -187,7 +158,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 font-mono">
+    <div className="min-h-screen bg-black text-gray-100 font-mono">
 
 <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />  
 
@@ -195,15 +166,15 @@ const Portfolio = () => {
       {/* Navigation */}
       <nav className="fixed w-full bg-gray-800 p-4 z-40">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <div className="text-green-400"> ~/portfolio</div>
+          <div className="text-lime-400">SubhChintak</div>
           <div className="hidden md:flex space-x-6">
-            <a href="#about" className="hover:text-green-400">About</a>
-            <a href="#work" className="hover:text-green-400">Work</a>
-            <a href="#projects" className="hover:text-green-400">Projects</a>
-            <a href="#blog" className="hover:text-green-400">Blog</a>
+            <a href="#about" className="hover:text-lime-400">About</a>
+            <a href="#work" className="hover:text-lime-400">Work</a>
+            <a href="#projects" className="hover:text-lime-400">Projects</a>
+            <a href="#blog" className="hover:text-lime-400">Blog</a>
           </div>
           <button 
-            className="md:hidden text-green-400"
+            className="md:hidden text-lime-400"
             onClick={() => setIsMobileMenuOpen(true)}
           >
             <Menu size={24} />
@@ -218,7 +189,7 @@ const Portfolio = () => {
         <section id="about" className="mb-20">
           <InfiniteTextBanner 
             texts={roles}
-            className="text-green-400/20 text-xl mb-8"
+            className="text-lime-400/70 text-xl mb-8"
           />
           
           <MacbookWindow title="about.js">
@@ -226,28 +197,28 @@ const Portfolio = () => {
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
                 <div className="relative">
                   <img 
-                    src="./me@j&k.jpg" 
+                    // src="./me@j&k.jpg" 
+                    src="https://i.pinimg.com/736x/b5/19/82/b519827312397d2f22bcec7d51888590.jpg"
                     alt="Profile Picture" 
-                    className="rounded-lg w-48 h-48 object-cover border-2 border-green-400"
+                    className="rounded-lg w-48 h-48 object-cover border-2 border-lime-400"
                   />
-                  <div className="absolute -bottom-3 -right-3 bg-green-400 text-gray-900 px-3 py-1 rounded text-sm">
+                  <div className="absolute -bottom-3 -right-3 bg-lime-400 text-gray-900 px-3 py-1 rounded text-sm">
                     Available
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h1 className="text-4xl mb-4 text-green-400 font-bold">Subhajit Chakraborty</h1>
+                  <h1 className="text-4xl mb-4 text-lime-400 font-bold">Subhajit Chakraborty</h1>
                   <div className="space-y-4 text-gray-300">
                     <p>
                       Full-stack developer with a passion for building scalable systems and open-source software.
-                      Focused on Rust, Go, and distributed systems.
                     </p>
-                    <p>
+                    {/* <p>
                       When not coding, you'll find me contributing to open source projects and writing technical blogs.
                       I believe in clean code, continuous learning, and building things that matter.
-                    </p>
+                    </p> */}
                     <div className="flex flex-wrap gap-2">
                       {["TypeScript", "React", "Node.js", "Go", "Rust", "Docker"].map((tech) => (
-                        <span key={tech} className="bg-gray-700 px-3 py-1 rounded-full text-sm">
+                        <span key={tech} className="bg-lime-400 px-3 py-1 rounded-full text-sm text-black font-bold">
                           {tech}
                         </span>
                       ))}
@@ -263,13 +234,13 @@ const Portfolio = () => {
 
         {/* Work Section */}
         <section id="work" className="mb-20">
-          <h2 className="text-3xl text-green-400 mb-6 font-bold">./WorkExperience</h2>
+          <h2 className="text-3xl text-lime-400 mb-6 font-bold">./WorkExperience</h2>
           <MacbookWindow title="work.js">
             <div className="space-y-8">
               {work.map((job, index) => (
                 <div key={index} className="bg-gray-700/50 p-6 rounded-lg hover:bg-gray-700 transition-colors">
-                  <h3 className="text-xl mb-2 text-green-400">{job.company}</h3>
-                  <div className="text-green-400/80 mb-2">{job.role}</div>
+                  <h3 className="text-xl mb-2 text-lime-400">{job.company}</h3>
+                  <div className="text-lime-400/80 mb-2">{job.role}</div>
                   <div className="text-gray-400 mb-3">{job.period}</div>
                   <p className="text-gray-300">{job.description}</p>
                 </div>
@@ -282,12 +253,12 @@ const Portfolio = () => {
 
         {/* Projects Section with Macbook styling
         <section id="projects" className="mb-20">
-          <h2 className="text-3xl text-green-400 mb-6 font-bold">./projects</h2>
+          <h2 className="text-3xl text-lime-400 mb-6 font-bold">./projects</h2>
           <MacbookWindow title="projects.js">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {projects.map((project, index) => (
                 <div key={index} className="bg-gray-700/50 p-6 rounded-lg hover:bg-gray-700 transition-colors">
-                  <h3 className="text-xl mb-3 text-green-400">{project.name}</h3>
+                  <h3 className="text-xl mb-3 text-lime-400">{project.name}</h3>
                   <p className="text-gray-300 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech) => (
@@ -299,14 +270,14 @@ const Portfolio = () => {
                   <div className="flex gap-4">
                     <a 
                       href={project.github}
-                      className="text-green-400 hover:underline inline-flex items-center gap-2"
+                      className="text-lime-400 hover:underline inline-flex items-center gap-2"
                     >
                       <Github size={16} /> Code
                     </a>
                     {project.demo && (
                       <a 
                         href={project.demo}
-                        className="text-green-400 hover:underline inline-flex items-center gap-2"
+                        className="text-lime-400 hover:underline inline-flex items-center gap-2"
                       >
                         <Link size={16} /> Demo
                       </a>
@@ -318,7 +289,7 @@ const Portfolio = () => {
             <div className="mt-8 text-center">
               <a 
                 href="https://github.com/yourusername"
-                className="inline-flex items-center gap-2 bg-green-400 text-gray-900 px-6 py-3 rounded-lg hover:bg-green-500 transition-colors"
+                className="inline-flex items-center gap-2 bg-lime-400 text-gray-900 px-6 py-3 rounded-lg hover:bg-lime-500 transition-colors"
               >
                 <Github size={20} />
                 View More on GitHub
@@ -331,7 +302,7 @@ const Portfolio = () => {
 
         {/* Projects Section */}
         <section id="projects" className="mb-20">
-          <h2 className="text-3xl text-green-400 mb-6 font-bold">./Projects</h2>
+          <h2 className="text-3xl text-lime-400 mb-6 font-bold">./Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
               <MacbookWindow key={index} title={`${project.name.toLowerCase()}.js`}>
@@ -341,11 +312,11 @@ const Portfolio = () => {
                     alt={project.name}
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <h3 className="text-xl text-green-400">{project.name}</h3>
+                  <h3 className="text-xl text-lime-400">{project.name}</h3>
                   <p className="text-gray-300">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech) => (
-                      <span key={tech} className="bg-gray-600 px-2 py-1 rounded text-xs">
+                      <span key={tech} className="bg-lime-400 text-black font-bold px-2 py-1 rounded text-xs">
                         {tech}
                       </span>
                     ))}
@@ -353,14 +324,14 @@ const Portfolio = () => {
                   <div className="flex gap-4">
                     <a 
                       href={project.github}
-                      className="text-green-400 hover:underline inline-flex items-center gap-2"
+                      className="text-lime-400 hover:underline inline-flex items-center gap-2"
                     >
                       <Github size={16} /> Code
                     </a>
                     {project.demo && (
                       <a 
                         href={project.demo}
-                        className="text-green-400 hover:underline inline-flex items-center gap-2"
+                        className="text-lime-400 hover:underline inline-flex items-center gap-2"
                       >
                         <Link size={16} /> Demo
                       </a>
@@ -373,7 +344,7 @@ const Portfolio = () => {
           <div className="mt-8 text-center">
             <a 
               href="https://github.com/yourusername"
-              className="inline-flex items-center gap-2 bg-green-400 text-gray-900 px-6 py-3 rounded-lg hover:bg-green-500 transition-colors"
+              className="inline-flex items-center gap-2 bg-lime-400 text-gray-900 px-6 py-3 rounded-lg hover:bg-lime-500 transition-colors"
             >
               <Github size={20} />
               View More on GitHub
@@ -385,15 +356,15 @@ const Portfolio = () => {
 
         {/* Blog Section */}
         <section id="blog" className="mb-20">
-          <h2 className="text-3xl text-green-400 mb-6 font-bold">./blogPosts</h2>
+          <h2 className="text-3xl text-lime-400 mb-6 font-bold">./blogPosts</h2>
           <MacbookWindow title="blog.js">
             <div className="space-y-8">
               {blogs.map((post, index) => (
                 <div key={index} className="bg-gray-700/50 p-6 rounded-lg hover:bg-gray-700 transition-colors">
                   <div className="text-gray-400 mb-2">{post.date}</div>
-                  <h3 className="text-xl mb-3 text-green-400">{post.title}</h3>
+                  <h3 className="text-xl mb-3 text-lime-400">{post.title}</h3>
                   <p className="text-gray-300 mb-4">{post.excerpt}</p>
-                  <a href="#" className="text-green-400 hover:underline inline-flex items-center gap-2">
+                  <a href="#" className="text-lime-400 hover:underline inline-flex items-center gap-2">
                     Read more <ExternalLink size={16} />
                   </a>
                 </div>
@@ -405,14 +376,14 @@ const Portfolio = () => {
 
         {/* Resume Section */}
         <section className="mb-20">
-          <h2 className="text-2xl text-green-400 mb-6">./resume.pdf</h2>
-          <div className="border border-gray-700 p-6 rounded-lg hover:border-green-400 transition-colors">
+          <h2 className="text-2xl text-lime-400 mb-6">./resume.pdf</h2>
+          <div className="border border-gray-700 p-6 rounded-lg hover:border-lime-400 transition-colors">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="https://drive.google.com/file/your-resume-link" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-gray-800 text-green-400 px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-gray-800 text-lime-400 px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors"
               >
                 <FileText size={20} />
                 View Resume
@@ -420,7 +391,7 @@ const Portfolio = () => {
               <a 
                 href="your-resume-download-link" 
                 download
-                className="inline-flex items-center justify-center gap-2 bg-green-400 text-gray-900 px-6 py-3 rounded-lg hover:bg-green-500 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-lime-400 text-gray-900 px-6 py-3 rounded-lg hover:bg-lime-500 transition-colors"
               >
                 <Download size={20} />
                 Download Resume
@@ -435,22 +406,22 @@ const Portfolio = () => {
         {/* Connect Banner */}
         <InfiniteTextBanner 
           texts={connectTexts}
-          className="text-green-400/20 text-xl py-8"
+          className="text-lime-400/70 text-xl py-8"
         />
 
         {/* Social Links */}
         <footer className="border-t border-gray-700 py-8">
           <div className="flex justify-center space-x-8">
-            <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+            <a href="#" className="text-lime-400 hover:text-gray-400 transition-colors">
               <Twitter size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+            <a href="#" className="text-lime-400 hover:text-gray-400 transition-colors">
               <Github size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+            <a href="#" className="text-lime-400 hover:text-gray-400 transition-colors">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+            <a href="#" className="text-lime-400 hover:text-gray-400 transition-colors">
               <Instagram size={24} />
             </a>
           </div>
