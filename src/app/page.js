@@ -82,10 +82,10 @@ const Portfolio = () => {
     {
       name: "CureXpert",
       description: "Real-time cryptocurrency price tracking app built with React",
-      github: "https://github.com/username/crypto-tracker",
-      demo: "https://crypto-tracker-demo.com",
-      tech: ["React", "Node.js", "WebSocket"],
-      image: "https://i.pinimg.com/736x/f9/79/c2/f979c27f10d01b22dc79d4f7796d2135.jpg"
+      github: "https://github.com/SubhChintak/curexpert",
+      demo: "http://curexpertindia.com",
+      tech: ["Vite", "Typescript", "Zod", "Tailwind CSS"],
+      image: "https://i.pinimg.com/736x/06/c5/1c/06c51c91bb917c924ca3048f7cd95a8d.jpg"
     },
     {
       name: "Femina flow",
